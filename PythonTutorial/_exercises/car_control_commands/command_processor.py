@@ -1,5 +1,6 @@
 
-from commands import StartCommand, StopCommand, MoveCommand, HelpCommand, QuitCommand
+from commands import (StartCommand, StopCommand,
+                      MoveCommand, HelpCommand, QuitCommand)
 
 
 class CommandProcessor:
@@ -27,4 +28,3 @@ class CommandProcessor:
         else:
             print("Invalid command. Type 'help' for instructions.")
             return True
-
