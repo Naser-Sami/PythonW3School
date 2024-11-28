@@ -31,4 +31,3 @@ print(list)
 # Make a copy of a list with the : operator:
 slice_list = this_list[:]
 print(slice_list)
-
