@@ -53,3 +53,15 @@ print(new_list)
 new_list = [x if x != 'banana' else 'orange' for x in fruits]
 print(new_list)
 
+# The expression in the example above says:
+# "Return the item if it is not banana, if it is banana return orange".
+
+
+fruits = ['apple', 'banana', 'cherry']
+new_list = [x for x in fruits if x == 'banana']
+print(new_list)
+
+
+fruits = ['apple', 'banana', 'cherry']
+new_list = ['apple' for x in fruits]
+print(new_list)
