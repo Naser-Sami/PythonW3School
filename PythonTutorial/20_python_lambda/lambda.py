@@ -53,3 +53,6 @@ my_tripler = my_func(3)
 
 print(my_doubler(11))
 print(my_tripler(11))
+
+
+# Use lambda functions when an anonymous function is required for a short period of time.
