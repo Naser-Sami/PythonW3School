@@ -81,6 +81,45 @@ class Student(Person):
 # By using the super() function, you do not have to use the name of the parent element, it will automatically inherit the methods and properties from its parent.
 
 
+s1 = Student("Naser", "Ebedo")
+s1.print_name()
+print(s1.graduation_year)
 
 
+# In the example below, the year 2019 should be a variable,
+# and passed into the Student class when creating student objects. To do so,
+# add another parameter in the __init__() function:
+
+# Add a year parameter, and pass the correct year when creating objects:
+class Student(Person):
+    def __init__(self,f_name, l_name, year):
+        super().__init__(f_name, l_name)
+
+        self.graduation_year = year
+
+
+s1 = Student("Naser", "Sami", 2016)
+
+s1.print_name()
+print(s1.graduation_year)
+
+
+# Add Methods
+# Example
+# Add a method called welcome to the Student class:
+
+class Student(Person):
+    def __init__(self,f_name, l_name, year):
+        super().__init__(f_name, l_name)
+
+        self.graduation_year = year
+
+    def welcome(self):
+        print("Welcome", self.f_name, self.l_name, "to the class of", self.graduation_year)
+# If you add a method in the child class with the same name as a function in the parent class,
+# the inheritance of the parent method will be overridden.
+
+
+s2 = Student("Naser", "Sami", 2016)
+s2.welcome()
 
