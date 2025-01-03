@@ -58,4 +58,3 @@ print(x.strftime("%B"))
 
 # A reference of all the legal format codes:
 # https://www.w3schools.com/python/python_datetime.asp
-
