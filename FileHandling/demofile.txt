@@ -1,0 +1,6 @@
+Hello, Python.
+Hello, Python2.
+
+Hello! Welcome to demofile.txt
+This file is for testing purposes.
+Good Luck!
